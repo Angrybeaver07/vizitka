@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5aee7819-0802-4b8b-99e2-09a6a8b615cd" name="KALUGA_ITL" url="http://kompas-kaluga.ru">
+        <fileTransfer host="46.28.70.225" port="21" username="kompas-kaluga" />
+      </webServer>
+      <webServer id="5a61fdc3-a288-4ad9-899d-800c9164bcf5" name="moy.kh.ua" url="http://moy.kh.ua">
+        <fileTransfer host="91.223.223.38" port="22" accessType="SFTP" password="df9edf9ddf92dfd9dfeddf99df9edf98dfc9dfdfdfc7dff8dfefdfe1dfec" username="bitrix" />
+      </webServer>
+      <webServer id="01a45866-0557-427d-a4fa-64fc4fea6093" name="UAlist" url="http://ualist.com">
+        <fileTransfer host="151.248.112.88" port="21" rootFolder="/www/ualist.com" username="ualist" />
+      </webServer>
+      <webServer id="b4be598a-30a6-47ce-9af5-7fd9cb028e1a" name="igrogroup" url="http://igrogroup.com.ua">
+        <fileTransfer host="77.222.131.73" port="21" rootFolder="/www" password="df9fdf9ddffadff9df9ddf9fdfe1df9edf9bdfda" username="igrogrou" />
+      </webServer>
+      <webServer id="599177a4-f539-41c2-bdb6-e8c37a46d82f" name="motorgo.net" url="http://motorgo.amortizatory.net/">
+        <fileTransfer host="193.138.244.66" port="22" rootFolder="/home/bitrix/ext_www/motorgo" accessType="SFTP" password="df9fdf9edff2dfcfdfc6dfc0dfe0dfc9dfc4dfc2dfc0dfce" username="bitrix" />
+      </webServer>
+      <webServer id="13689070-3fd0-463a-bd8c-05f84b7915fa" name="Kaminari.info" url="http://kaminari.info">
+        <fileTransfer host="159.253.137.107" port="21" rootFolder="/public_html" password="dfe4dfc0dfccdfcddf92df9edfc1dfc0df99" username="dios@kaminari.info">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
+

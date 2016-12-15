@@ -1,0 +1,8 @@
+<templateSet group="JavaScript">
+  <template name="post" value="// если сервер отдает json:&#10;//  echo json_encode($RESULT);&#10;// (предпочтительнее)&#10;$.post('&lt;?=$templateFolder?&gt;/ajax.php',&#10;     {&#10;       action: &quot;GetSections&quot;,&#10;       Section: value&#10;     },&#10;     function(data){&#10;        data = $.parseJSON(data);&#10;       //$(&quot;#datesto&quot;).html(data);&#10;     }&#10; );" description="ajax-post" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+</templateSet>

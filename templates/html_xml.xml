@@ -1,0 +1,26 @@
+<templateSet group="html/xml">
+  <template name="clear" value="&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;" description="&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="java" value="&lt;script type=&quot;text/javascript&quot;&gt;&#10;    $(document).ready(function(){&#10;        &#10;    });&#10;&lt;/script&gt;" description="include javascript" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="pre" value="&lt;?global $USER;if ($USER-&gt;IsAdmin()){ echo '&lt;pre&gt;';print_r($XXXXX);echo '&lt;/pre&gt;';}?&gt;" description="print_r()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="void" value="javascript:void(0);" description="javascript:void(0)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>

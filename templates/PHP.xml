@@ -1,0 +1,56 @@
+<templateSet group="PHP">
+  <template name="pre" value="global $USER;if ($USER-&gt;IsAdmin()){ echo '&lt;pre&gt;';print_r($END$);echo '&lt;/pre&gt;';}" description="pre" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ellist" value="$arSelect = Array(&quot;ID&quot;, &quot;NAME&quot;, &quot;DATE_ACTIVE_FROM&quot;,&quot;PROPERTY_*&quot;);&#10;$arFilter = Array(&quot;IBLOCK_ID&quot;=&gt;IntVal(XXX), &quot;ACTIVE_DATE&quot;=&gt;&quot;Y&quot;, &quot;ACTIVE&quot;=&gt;&quot;Y&quot;);&#10;$res = CIBlockElement::GetList(Array(), $arFilter, false, Array(&quot;nPageSize&quot;=&gt;50), $arSelect);&#10;while($arFields = $res-&gt;GetNext())&#10;{&#10;  echo &quot;&lt;pre&gt;&quot;;print_r($arFields);echo &quot;&lt;/pre&gt;&quot;;&#10;}" description="CIBLOCKELEMENT::GetList()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="eladd" value="$el = new CIBlockElement;&#10;&#10;        $PROP = array();&#10;        $PROP[12] = &quot;Белый&quot;;  // свойству с кодом 12 присваиваем значение &quot;Белый&quot;&#10;        $PROP[3] = 38;        // свойству с кодом 3 присваиваем значение 38&#10;&#10;        $arLoadProductArray = Array(&#10;            &quot;MODIFIED_BY&quot;    =&gt; $USER-&gt;GetID(), // элемент изменен текущим пользователем&#10;            &quot;IBLOCK_SECTION_ID&quot; =&gt; false,          // элемент лежит в корне раздела&#10;            &quot;IBLOCK_ID&quot;      =&gt; 18,&#10;            &quot;PROPERTY_VALUES&quot;=&gt; $PROP,&#10;            &quot;NAME&quot;           =&gt; &quot;Элемент&quot;,&#10;            &quot;ACTIVE&quot;         =&gt; &quot;Y&quot;,            // активен&#10;            &quot;PREVIEW_TEXT&quot;   =&gt; &quot;текст для списка элементов&quot;,&#10;            &quot;DETAIL_TEXT&quot;    =&gt; &quot;текст для детального просмотра&quot;,&#10;            &quot;DETAIL_PICTURE&quot; =&gt; CFile::MakeFileArray($_SERVER[&quot;DOCUMENT_ROOT&quot;].&quot;/image.gif&quot;)&#10;        );&#10;&#10;        if($PRODUCT_ID = $el-&gt;Add($arLoadProductArray))&#10;            echo &quot;New ID: &quot;.$PRODUCT_ID.&quot;&lt;br /&gt;&quot;;&#10;        else&#10;            echo &quot;Error: &quot;.$el-&gt;LAST_ERROR.&quot;&lt;br /&gt;&quot;;" description="CIBlocklement::Add" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="imgshow" value="CFile::ShowImage($arItem[&quot;PREVIEW_PICTURE&quot;], 200, 200, 'title=&quot;'.$arItem[&quot;NAME&quot;].'&quot; alt=&quot;'.$arItem[&quot;NAME&quot;].'&quot;', '', false);" description="CFile::ShowImage($str_IMAGE_ID, 200, 200, &quot;border=0&quot;, &quot;&quot;, false);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sectlist" value="$SectFilter = Array('IBLOCK_ID'=&gt;XXX, 'GLOBAL_ACTIVE'=&gt;'Y', 'UF_'=&gt;'');&#10;    $Sect_list = CIBlockSection::GetList(Array(&quot;NAME&quot;=&gt;&quot;ASC&quot;), $SectFilter, false,array('UF_'));&#10;    while($Section = $Sect_list-&gt;GetNext())&#10;    {&#10;        echo $Section['ID'].' '.$Section['NAME'].': '.$Section['ELEMENT_CNT'].'&lt;br&gt;';&#10;    }" description="Sections List" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="template" value="=SITE_TEMPLATE_PATH" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ifUID" value="global $USER;$UID=$USER-&gt;GetID();if ($UID==1){echo '&lt;pre&gt;';print_r();echo '&lt;/pre&gt;';}" description="pre for one USER" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="incfile" value="$APPLICATION-&gt;IncludeFile(&quot;путь/к/выделенной/области&quot;,&#10;Array(),&#10;Array(&quot;MODE&quot;=&gt;&quot;html&quot;)&#10;);" description="html file include area" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bxdebug" value="__($,true);" description="bitrix debug" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

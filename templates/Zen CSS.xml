@@ -1,0 +1,10 @@
+<templateSet group="Zen CSS">
+  <template name="bdblrs" value="border-bottom-left-radius:$VAR0$;" description="border-bottom-left-radius:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="JSP" value="false" />
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
