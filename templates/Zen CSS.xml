@@ -3,8 +3,8 @@
     <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="JSP" value="false" />
       <option name="HTML_TEXT" value="true" />
+      <option name="JSP" value="false" />
     </context>
   </template>
 </templateSet>
