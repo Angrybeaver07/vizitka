@@ -37,6 +37,9 @@
       <webServer id="a3d02c52-ac08-45fd-88f7-5939524648a5" name="vvvvv" url="https://github.com/Angrybeaver07/vizitka">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="de2ee58d-95f7-449f-b7ca-068de1258970" name="vizitka" url="https://github.com/Angrybeaver07/vizitka">
+        <fileTransfer port="0" mountedRoot="D:\projects\verstka\Vizitka" accessType="MOUNT" />
+      </webServer>
     </option>
   </component>
 </application>
