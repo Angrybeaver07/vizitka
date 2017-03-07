@@ -43,6 +43,9 @@
       <webServer id="08c8ca86-56b6-468b-9a3e-0a4288db7cd4" name="github" url="https://github.com/Angrybeaver07/verstka">
         <fileTransfer port="0" mountedRoot="C:\Users\DuMOH\Documents\GitHub\verstka" accessType="MOUNT" />
       </webServer>
+      <webServer id="bf0e8d12-78b3-4551-b8ee-7514c423536a" name="carline" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="D:\1\carline" accessType="MOUNT" />
+      </webServer>
     </option>
   </component>
 </application>
